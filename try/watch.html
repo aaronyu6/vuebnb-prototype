@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <script src="../sample/data.js"></script>
+    <title>Vuebnb</title>
+    <link rel="stylesheet" href="../node_modules/open-sans-all/css/open-sans.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+<body>
+
+<div id="app">
+
+</div>
+<script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello world'
+        },
+        watch: {
+            message: function(newVal, oldVal) {
+                console.log(oldVal, ', ', newVal);
+            }
+        }
+    });
+    setTimeout(function() {
+        app.message = 'Goodbye world';
+// Output: "Hello world, Goodbye world";
+    }, 2000);
+</script>
+</body>
