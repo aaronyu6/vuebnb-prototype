@@ -17,3 +17,4 @@ $ git clone https://github.com/fsvwd/vuebnb-project.git
 * * *
 
 *Loving Vue.js? Join [Vue.js Developers](https://vuejsdevelopers.com), a community of thousands of web developers passionate about learning and building with Vue.js.*
+# vuebnb-prototype
